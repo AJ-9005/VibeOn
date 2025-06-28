@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body{
+    background-color: black;
+}
+.playlists{
+    background-color: black;
+    width: 100vw;
+    min-height: 25vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.playlist-box{
+    background-color: green;
+    width: 15em;
+    height: 3em;
+    margin-left: 8%;
+    display: flex;
+    color: white;
+    margin-top: 1em;
+    transition: transform 0.3s ease;
+}
+.playlist-box:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.pthumbnail{
+    width: 25%;
+    height: 90%;
+    background-color: blue;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.playlist-box p{
+    margin-left: 10%;
+    margin-top: 7%;
+}
+.songs{
+    width: 100vw;
+    min-height: 50vh;
+    margin-top: 3em;
+}
+.songbox{
+    width: 80%;
+    background-color: black;
+    height: 25px;
+    margin-left: 5%;
+    display: flex;
+    margin-top: 12px;
+}
+.songbox:hover{
+    background-color: rgb(184, 159, 159);
+}
+.songbox p{
+    color: white;
+}
+.songheader{
+    display: flex;
+    color: white;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 25px;
+    color: rgb(126, 125, 125);
+}
+.name{
+    margin-left: 13%;
+}
+.duration{
+    position: absolute;
+    right: 20%;
+}
+.sep{
+    height: 1px;
+    background-color: rgb(126, 125, 125);
+    border: none;
+}
+#name{
+    margin-left: 10%;
+}
+#duration{
+    position: absolute;
+    right: 20%;
+}
+.player{
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(151, 151, 151);
+    position: fixed;
+    bottom: 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#newplaylist{
+    margin-top: 50px;
+    margin-left: 40vw;
+    height: 50px;
+    width: 25vw;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+#newplaylist:hover{
+    background-color: rgb(199, 198, 198);
+}
+.fa-solid{
+    color: black;
+    backdrop-filter: blur(100px);
+    height: 5px;
+    width: 5px;
+}
+.fa-solid:hover{
+    cursor: pointer;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    padding-top: 2em;
+}
+#progress{
+    appearance: none;
+    height: 5px;
+    width: 40%;
+    margin-top: 25px;
+    cursor: pointer;
+    background-color: white;
+}
+#progress::-webkit-slider-thumb{
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 7px;
+}

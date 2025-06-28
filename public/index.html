@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe On</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/7705062483.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- <h2 style="color: white; margin-left: 2em; margin-top: 3em;">Your playlists</h2>
+    <div class="playlists">
+        <div class="playlist-box">
+            <div class="pthumbnail"></div>
+            <p>Playlist 1</p>
+        </div>
+    </div>
+    <button id="newplaylist">+ Create New Playlist</button> -->
+    <div class="songs">
+        <h2 style="color: white; margin-left: 2em;">Your songs</h2>
+        <div class="songheader">
+            <p id="Sno">S.No.</p>
+            <p id="name">Name</p>
+            <p id="duration">Duration</p>
+        </div>
+        <hr class="sep" />
+    </div>
+    <div class="player">
+        <div class="controls">
+            <i class="fa-solid fa-backward-step" id="prev"></i>
+            <i class="fa-solid fa-play" id="play"></i>
+            <i class="fa-solid fa-forward-step" id="next"></i>
+        </div>
+        <input type="range" id="progress" value="30" max="31" min="0" step="any">
+    </div>
+    <audio src="" class="stereo"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
